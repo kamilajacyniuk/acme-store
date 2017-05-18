@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+      box-sizing: border-box;
+
+}
+.main_width{
+  width: 1200px;
+  margin: 0 auto;
+
+}
+header{
+padding-top: 30px;
+padding-bottom: 20px;
+border-bottom: 1px solid black;
+}
+.header_content{
+  position: relative;
+}
+h1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+ul{
+  margin-top: 20px;
+  text-align: center;
+}
+ul li{
+  list-style: none;
+  display: inline-block;
+  font-weight: 700;
+  padding: 0 20px 0 20px;
+  font-size: 14px;
+  color:#424242;
+}
+.basket {
+  position: absolute;
+  right: 0;
+  top:0;
+  display: flex;
+}
+/*main-content*/
+.main_content{
+  background-color: #f7f7f7;
+  height: 100vh;
+}
+.main_content h1{
+  padding-top: 20px;
+  color:#424242;
+}
+.form{
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+input {
+  width: 100%;
+}
+input[type=button]{
+  width: 100%;
+}
+.order{
+  float: right;
+  width: 50%;
+  padding: 50px;
+}
+
+.product{
+  margin-top: 40px;
+  position: relative;
+  height: 90px;
+}
+.product_image{
+  position: absolute;
+  width: 35%;
+  background-color: white;
+}
+
+.product_name{
+  text-align: center;
+  font-weight: 700;
+  clear: both;
+}
+.middle{
+  position: absolute;
+  left: 40%;
+}
+.quantity{
+  padding-top: 10px;
+  display:flex;
+}
+.quantity p{
+  padding: 10px;
+}
+
+.quantity button{
+  background-color: transparent;
+  border: none;
+}
+
+.price{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}

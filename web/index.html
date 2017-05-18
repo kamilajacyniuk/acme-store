@@ -1,10 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Checkout</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body>
 
+<body>
+    <header>
+        <div class="header_content main_width">
+            <h1>ACME STORE</h1>
+            <ul>
+                <li>
+                    <a href="#"></a>Women</li>
+                <li>
+                    <a href="#"></a>Men</li>
+                <li>
+                    <a href="#"></a>Accessories</li>
+                <li>
+                    <a href="#"></a>Shoes</li>
+            </ul>
+            <div class="basket">
+                <img src="..\src\assets\img\icon-bag.svg" alt="" />
+                <p>
+                    2
+                </p>
+            </div>
+        </div>
+    </header>
+    <!-- MAIN-CONTENT -->
+    <div class="main_content main_width">
+        <h1>CHECKOUT</h1>
+        <!-- FORM -->
+        <div class="form">
+            <h2>DELIVERY ADDRESS</h2>
+            <form>
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" name="firstname" value="Anna">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname">
+                <label for="email">E-MAIL</label>
+                <input type="text" name="email">
+                <label for="phone">PHONE</label>
+                <input type="text" name="phone">
+                <label for="address">ADDRESS</label>
+                <input type="text" name="address">
+                <label for="address_cont">ADDRESS CONT</label>
+                <input type="text" name="address_cont">
+                <label for="zipcode">ZIP CODE</label>
+                <input type="text" name="zipcode">
+                <label for="city">CITY</label>
+                <input type="text" name="city">
+                <label for="state">STATE</label>
+                <input type="text" name="state">
+                <label for="country">COUNTRY</label>
+                <input type="text" name="country" list="countryname">
+                <datalist id="countryname">
+                    <option value="United States">
+                        <option value="Europe">
+                            <option value="Poland">
+                </datalist>
+            </form>
+            <h2>PAYMENT</h2>
+            <form>
+                <label for="cardnumber">CARD NUMBER</label>
+                <input type="text" name="cardnumber">
+                <label for="cardholder">CARD HOLDER</label>
+                <input type="text" name="cardholder">
+                <label for="cvc">CVC</label>
+                <input type="text" name="cvc">
+                <input type="button" name="name" value="buy">
+            </form>
+        </div>
+        <!-- YOUR ORDER -->
+        <div class="order">
+            <h2>YOUR ORDER</h2>
+            <!-- product 1 -->
+            <div class="product">
+                <img class="product_image" src="..\src\assets\img\pic-item.png" alt="" />
+                <div class="middle">
+                    <p class="product_name">
+                        Acme product name
+                    </p>
+                    <div class="quantity">
+                        <button><img src="..\src\assets\img\icon-minus.svg" alt="" /></button>
+                        <p>
+                            1
+                        </p>
+                        <button><img src="..\src\assets\img\icon-plus.svg" alt="" /></button>
+                    </div>
+                    <p>
+                        Price
+                    </p>
+                </div>
+                <p class="price">
+                    300.00$
+                </p>
+            </div>
+            <!-- product 2 -->
+            <div class="product">
+                <img class="product_image" src="..\src\assets\img\pic-item.png" alt="" />
+                <div class="middle">
+                    <p class="product_name">
+                        Motorhead glasses black
+                    </p>
+                    <div class="quantity">
+                        <button><img src="..\src\assets\img\icon-minus.svg" alt="" /></button>
+                        <p>
+                            1
+                        </p>
+                        <button><img src="..\src\assets\img\icon-plus.svg" alt="" /></button>
+                    </div>
+                    <p>
+                        Price
+                    </p>
+                </div>
+                <p class="price">
+                    300.00$
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
