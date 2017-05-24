@@ -1,0 +1,22 @@
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/header";
+@import "partials/form";
+@import "partials/order";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.main_width{
+  width: 1200px;
+  margin: 0 auto;
+}
+.main_content{
+  background-color: #f7f7f7;
+  height: 100vh;
+  h1{
+    padding-top: 20px;
+    color:#424242;
+  }
+}
