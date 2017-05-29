@@ -24,6 +24,6 @@ gulp.task('serve', ['sass'], function(){
     server: [dir, 'src/']
   });
 
-  gulp.watch(dir+'/scss/*.scss',['sass']);
+  gulp.watch(dir+'/**/scss/**/*.scss',['sass']);
   gulp.watch(dir+"/*.html").on('change',browserSync.reload);
 })

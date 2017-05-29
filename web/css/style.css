@@ -231,40 +231,76 @@ input[type=button] {
 }
 
 header {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
+  width: 100%;
+  background-color: white;
 }
 
-.header_content {
-  position: relative;
-}
-
-h1 {
+header div {
   text-align: center;
   font-weight: 700;
   font-size: 18px;
 }
 
-ul {
+.desktop {
   margin-top: 20px;
   text-align: center;
+  display: block;
+  overflow: hidden;
 }
 
-ul li {
-  list-style: none;
-  display: inline-block;
+.desktop a {
+  text-decoration: none;
   font-weight: 700;
   padding: 0 20px 0 20px;
   font-size: 14px;
   color: #424242;
 }
 
+.tablet {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 20px;
+}
+
+.tablet div {
+  display: none;
+  margin-top: 48px;
+}
+
+.tablet div a {
+  display: block;
+  color: #424242;
+  text-decoration: none;
+  background: white;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.tablet button {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
 .basket {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 50px;
+  top: 25px;
   display: flex;
+}
+
+@media (max-width: 767px) {
+  .tablet {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
 }
 
 .form {
@@ -284,6 +320,13 @@ input[type=submit] {
 
 select {
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .form {
+    width: 100%;
+    float: none;
+  }
 }
 
 .order {
@@ -347,22 +390,26 @@ select {
   text-align: right;
 }
 
+@media (max-width: 767px) {
+  .order {
+    width: 100%;
+    float: none;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+  background-color: #f7f7f7;
 }
 
 .main_width {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.main_content {
-  background-color: #f7f7f7;
-  height: 100vh;
-}
-
 .main_content h1 {
+  text-align: center;
   padding-top: 20px;
   color: #424242;
 }

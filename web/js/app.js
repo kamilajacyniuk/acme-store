@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('form > input').keyup(function() {
 
         var empty = false;
-        $('form > input', ).each(function() {
+        $('form > input').each(function() {
             if ($(this).val() == '') {
                 empty = true;
             }
@@ -13,5 +13,9 @@ $(document).ready(function() {
         } else {
             $('#submit').removeAttr('disabled');
         }
+    });
+
+    $('.tablet button').click(function() {
+      $(this).toggleClass('expanded').siblings('div').slideToggle();
     });
 })

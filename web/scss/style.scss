@@ -7,15 +7,15 @@
 body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+      background-color: #f7f7f7;
 }
 .main_width{
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .main_content{
-  background-color: #f7f7f7;
-  height: 100vh;
   h1{
+    text-align: center;
     padding-top: 20px;
     color:#424242;
   }

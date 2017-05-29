@@ -13,68 +13,35 @@
 
 <body>
     <header>
-        <div class="header_content main_width">
+        <div>
             <h1>ACME STORE</h1>
-            <ul>
-                <li>
-                    <a href="#"></a>Women</li>
-                <li>
-                    <a href="#"></a>Men</li>
-                <li>
-                    <a href="#"></a>Accessories</li>
-                <li>
-                    <a href="#"></a>Shoes</li>
-            </ul>
-            <div class="basket">
-                <img src="../assets/img/icon-bag.svg" alt="" />
-                <p>
-                    2
-                </p>
+        </div>
+        <nav class="desktop">
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Accessories</a>
+            <a href="#">Shoes</a>
+        </nav>
+        <nav class="tablet">
+            <button>Menu</button>
+            <div>
+                <a href="#">Women</a>
+                <a href="#">Men</a>
+                <a href="#">Accessories</a>
+                <a href="#">Shoes</a>
             </div>
+        </nav>
+        <div class="basket">
+            <img src="../assets/img/icon-bag.svg" alt="" />
+            <p>
+                2
+            </p>
         </div>
     </header>
     <!-- MAIN-CONTENT -->
     <div class="main_content main_width">
         <h1>CHECKOUT</h1>
-        <!-- FORM -->
-        <div class="form">
-            <h2>DELIVERY ADDRESS</h2>
-            <form name="myForm" action="#" method="get">
-                <label for="firstname">FIRST NAME</label>
-                <input type="text" name="firstname" value="Anna">
-                <label for="lastname">LAST NAME</label>
-                <input type="text" name="lastname">
-                <label for="email">E-MAIL</label>
-                <input type="text" name="email">
-                <label for="phone">PHONE</label>
-                <input type="text" name="phone">
-                <label for="address">ADDRESS</label>
-                <input type="text" name="address">
-                <label for="address_cont">ADDRESS CONT</label>
-                <input type="text" name="address_cont">
-                <label for="zipcode">ZIP CODE</label>
-                <input type="text" name="zipcode">
-                <label for="city">CITY</label>
-                <input type="text" name="city">
-                <label for="state">STATE</label>
-                <input type="text" name="state">
-                <label for="country">COUNTRY</label>
-                <br>
-                <select name="countryname">
-                    <option>United States</option>
-                    <option>Europe</option>
-                    <option>Poland</option>
-                </select>
-                <h2>PAYMENT</h2>
-                <label for="cardnumber">CARD NUMBER</label>
-                <input type="text" name="cardnumber">
-                <label for="cardholder">CARD HOLDER</label>
-                <input type="text" name="cardholder">
-                <label for="cvc">CVC</label>
-                <input type="text" name="cvc">
-                <input type="submit" id="submit" value="BUY" disabled="disabled">
-            </form>
-        </div>
+
         <!-- YOUR ORDER -->
         <div class="order">
             <h2>YOUR ORDER</h2>
@@ -166,6 +133,45 @@
                     </tr>
                 </table>
             </div>
+        </div>
+        <!-- FORM -->
+        <div class="form">
+            <h2>DELIVERY ADDRESS</h2>
+            <form name="myForm" action="#" method="get">
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" name="firstname" value="Anna">
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname">
+                <label for="email">E-MAIL</label>
+                <input type="text" name="email">
+                <label for="phone">PHONE</label>
+                <input type="text" name="phone">
+                <label for="address">ADDRESS</label>
+                <input type="text" name="address">
+                <label for="address_cont">ADDRESS CONT</label>
+                <input type="text" name="address_cont">
+                <label for="zipcode">ZIP CODE</label>
+                <input type="text" name="zipcode">
+                <label for="city">CITY</label>
+                <input type="text" name="city">
+                <label for="state">STATE</label>
+                <input type="text" name="state">
+                <label for="country">COUNTRY</label>
+                <br>
+                <select name="countryname">
+                    <option>United States</option>
+                    <option>Europe</option>
+                    <option>Poland</option>
+                </select>
+                <h2>PAYMENT</h2>
+                <label for="cardnumber">CARD NUMBER</label>
+                <input type="text" name="cardnumber">
+                <label for="cardholder">CARD HOLDER</label>
+                <input type="text" name="cardholder">
+                <label for="cvc">CVC</label>
+                <input type="text" name="cvc">
+                <input type="submit" id="submit" value="BUY" disabled="disabled">
+            </form>
         </div>
     </div>
 </body>

@@ -43,7 +43,7 @@
    table {
       width: 100%;
       tr {
-         
+
          td:nth-child(1) {
             text-align: left;
          }
@@ -53,4 +53,11 @@
          }
       }
    }
+}
+
+@media (max-width:$hamburger-width){
+.order{
+  width: 100%;
+  float: none;
+}
 }
