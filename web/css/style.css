@@ -239,7 +239,7 @@ header {
   background-color: white;
 }
 
-header div {
+header div h1 {
   text-align: center;
   font-weight: 700;
   font-size: 18px;
@@ -255,7 +255,7 @@ header div {
 .desktop a {
   text-decoration: none;
   font-weight: 700;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   font-size: 14px;
   color: #424242;
 }
@@ -277,26 +277,45 @@ header div {
   color: #424242;
   text-decoration: none;
   background: white;
-  padding: 10px 0 10px 0;
+  padding: 10px 30px;
   border-bottom: 1px solid #ddd;
 }
 
 .tablet button {
+  background-color: transparent;
+  outline: none;
+  border: none;
   position: absolute;
-  top: 10px;
-  left: 50px;
+  top: 5px;
+  left: 120px;
+  background-image: url("../../../assets/img/icon-hamburger.svg");
+  background-repeat: no-repeat;
+  height: 30px;
+}
+
+.tablet button p {
+  float: right;
+  padding-left: 30px;
 }
 
 .basket {
   position: absolute;
   right: 50px;
   top: 25px;
-  display: flex;
+}
+
+.basket p {
+  float: right;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 @media (max-width: 767px) {
   .tablet {
     display: block;
+  }
+  .tablet button {
+    left: 20px;
   }
   .desktop {
     display: none;
@@ -306,16 +325,50 @@ header div {
 .form {
   float: left;
   width: 50%;
-  padding: 50px;
+  padding: 30px 100px;
 }
 
-input {
+.form h2 {
+  padding: 30px 20px;
+  color: #424242;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+label {
+  font-weight: 700;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+label span {
+  color: red;
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+input, select {
   width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+input:focus, select:focus {
+  border-color: #5a1b8f;
+  outline: none;
 }
 
 input[type=submit] {
   width: 100%;
   background-color: #5a1b8f;
+  font-weight: 700;
+  font-size: 12px;
 }
 
 select {
@@ -326,17 +379,26 @@ select {
   .form {
     width: 100%;
     float: none;
+    padding: 30px 10px;
   }
 }
 
 .order {
   float: right;
   width: 50%;
-  padding: 50px;
+  padding: 30px 100px;
+}
+
+.order h2 {
+  padding: 30px 20px;
+  color: #424242;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .product {
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   position: relative;
   height: 90px;
 }
@@ -376,6 +438,11 @@ select {
   position: absolute;
   right: 0;
   bottom: 0;
+  font-weight: 700;
+}
+
+.payments {
+  padding-left: 20px;
 }
 
 .payments table {
@@ -390,26 +457,38 @@ select {
   text-align: right;
 }
 
+.payments table tr td:nth-child(2) p {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
 @media (max-width: 767px) {
   .order {
     width: 100%;
     float: none;
+    padding: 30px 10px;
   }
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-  background-color: #f7f7f7;
 }
 
 .main_width {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: auto;
+}
+
+.main_content {
+  background-color: #f7f7f7;
 }
 
 .main_content h1 {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 30px;
   color: #424242;
+  font-weight: 700;
+  font-size: 14px;
 }
